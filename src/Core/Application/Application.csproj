@@ -9,4 +9,9 @@
 		<ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\..\Common\Shared\Shared.csproj" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Common\Mappings\" />
+	  <Folder Include="Author\EventHandlers\" />
+	  <Folder Include="Author\Queries\" />
+	</ItemGroup>
 </Project>

@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\Core\Application.csproj" />
+		<ProjectReference Include="..\..\Core\Application\Application.csproj" />
+    <PackageVersion Include="FirebaseAuthentication.net" Version="4.1.0" />
 	</ItemGroup>
 </Project>
