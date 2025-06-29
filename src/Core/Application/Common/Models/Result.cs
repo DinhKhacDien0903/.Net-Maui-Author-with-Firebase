@@ -1,4 +1,4 @@
-namespace Application.Common.Interfaces;
+namespace Application.Common.Models;
 
 public class Result(bool succeeded, IEnumerable<string> errors)
 {

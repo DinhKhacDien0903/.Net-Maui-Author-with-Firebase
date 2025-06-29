@@ -4,12 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AuthorApp"
+    xmlns:pages="clr-namespace:AuthorApp.Features.Pages"
     Shell.FlyoutBehavior="Flyout"
     Title="AuthorApp">
-
+    <ShellContent
+        Title="Sign Up"
+        ContentTemplate="{DataTemplate pages:SignUpPage}"
+        Route="SignUpPage"/>
+    <ShellContent
+        Title="Sign In"
+        ContentTemplate="{DataTemplate pages:SignInPage}"
+        Route="SignInPage"/>
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"/>
 
 </Shell>

@@ -7,6 +7,11 @@
   </PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\..\Core\Application\Application.csproj" />
-    <PackageVersion Include="FirebaseAuthentication.net" Version="4.1.0" />
+	</ItemGroup>
+
+  	<ItemGroup>
+      <PackageReference Include="FirebaseAuthentication.net" Version="4.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
 	</ItemGroup>
 </Project>

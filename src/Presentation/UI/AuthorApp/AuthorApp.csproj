@@ -2,6 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-android</TargetFrameworks>
+		<RuntimeIdentifiers Condition="$(TargetFramework.Contains('-android'))">android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
 
@@ -59,6 +60,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\..\Core\Application.csproj" />
+		<ProjectReference Include="..\..\..\Core\Application\Application.csproj" />
+		<ProjectReference Include="..\..\..\Infrastructure\Infrastructure\Infrastructure.csproj" />
+	</ItemGroup>
+
+		<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="9.1.0" />
+		<PackageReference Include="Realm" Version="20.0.0" />
+		<PackageReference Include="MediatR" Version="12.2.0" />
 	</ItemGroup>
 </Project>
